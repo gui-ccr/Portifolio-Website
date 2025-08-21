@@ -113,3 +113,14 @@
   transform: translateY(-5px);
   background-color: var(--color-card-hover); /* <-- Variável */
 }
+.about-content {
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    text-align: left;
+  }
+}

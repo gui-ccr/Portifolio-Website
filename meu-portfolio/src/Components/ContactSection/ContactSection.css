@@ -1,10 +1,3 @@
-.contact-section {
-  min-height: 90vh;
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: var(--color-background-secondary); /* <-- Variável */
-}
-
 .contact-subtitle {
   color: var(--color-text-secondary); /* <-- Variável */
   margin-bottom: 3rem;
@@ -15,6 +8,7 @@
 
 .contact-form {
   max-width: 600px;
+  width: 100%;
   margin: 0 auto;
   text-align: left;
 }
@@ -72,4 +66,19 @@
   text-align: center;
   margin-top: 1rem;
   font-weight: 500;
+}
+.contact-section {
+  min-height: 90vh;
+  text-align: center;
+  background-color: var(--color-background-secondary);
+
+  /* Espaçamento menor para mobile (padrão) */
+  padding: 4rem 1rem; 
+}
+
+/* Em ecrãs maiores, voltamos ao espaçamento original */
+@media (min-width: 768px) {
+  .contact-section {
+    padding: 4rem 2rem;
+  }
 }

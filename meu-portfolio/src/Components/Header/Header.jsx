@@ -1,80 +1,30 @@
-
-import React from "react";
+import React, { useState } from "react"; // 1. Importe o useState
 import { Link } from "react-scroll";
 import "./Header.css";
 
+function Header() {
+  // 2. Crie um estado para controlar se o menu mobile está aberto
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-function Header({ toggleTheme, theme }) {
   return (
     <header className="header">
       <nav className="nav-container">
-        <Link
-          activeClass="active"
-          spy={true}
-          to="inicio"
-          smooth={true}
-          duration={800}
-          className="nav-logo"
-          style={{ cursor: 'pointer' }}
-        >
+        <Link to="inicio" smooth={true} duration={800} className="nav-logo">
           Guilherme Rodrigues
         </Link>
-        <ul className="nav-list">
-          <li>
-            <Link
-              activeClass="active"
-              spy={true}
-              to="inicio"
-              smooth={true}
-              duration={800}
-              className="nav-link"
-            >
-              Início
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              spy={true}
-              to="sobre"
-              smooth={true}
-              duration={800}
-              className="nav-link"
-            >
-              Sobre
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              spy={true}
-              to="projetos"
-              smooth={true}
-              duration={800}
-              className="nav-link"
-            >
-              Projetos
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              spy={true}
-              to="contato"
-              smooth={true}
-              duration={800}
-              className="nav-link"
-            >
-              Contato
-            </Link>
-          </li>
 
-          {/* <li>
-            <button onClick={toggleTheme} className="theme-toggle-button">
-              {theme === 'dark' ? '☀️' : '🌙'}
-            </button>
-          </li> */}
+        {/* 3. O nosso menu de navegação. Adicionamos uma classe condicional */}
+        <ul className={`nav-list ${isMenuOpen ? "nav-list--open" : ""}`}>
+          <li><Link to="inicio" smooth={true} duration={800} className="nav-link" onClick={() => setIsMenuOpen(false)}>Início</Link></li>
+          <li><Link to="sobre" smooth={true} duration={800} className="nav-link" onClick={() => setIsMenuOpen(false)}>Sobre</Link></li>
+          <li><Link to="projetos" smooth={true} duration={800} className="nav-link" onClick={() => setIsMenuOpen(false)}>Projetos</Link></li>
+          <li><Link to="contato" smooth={true} duration={800} className="nav-link" onClick={() => setIsMenuOpen(false)}>Contato</Link></li>
         </ul>
+
+        
+        <button className="nav-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          ☰
+        </button>
       </nav>
     </header>
   );
