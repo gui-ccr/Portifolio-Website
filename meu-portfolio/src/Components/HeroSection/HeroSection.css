@@ -1,0 +1,68 @@
+.hero-section {
+  min-height: 100vh; /* Ocupa no mínimo 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center;
+  padding: 2rem;
+  position: relative; /* Necessário para o indicador de scroll */
+  border-bottom: 1px solid #2c2c2c; /* Linha sutil de separação */
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-greeting {
+  font-size: 1.25rem;
+  color: #FF9D00; /* Laranja de destaque */
+}
+
+.hero-title {
+  font-size: 4.5rem; /* Tamanho grande para impacto */
+  font-weight: 700;
+  margin: 1rem 0;
+  line-height: 1.1;
+}
+
+.hero-name {
+  color: var(--color-text-primary); 
+}
+
+.hero-subtitle {
+  font-size: 1.75rem;
+  color: #a0a0a0; /* Cinza claro para o subtítulo */
+  font-weight: 400;
+}
+
+.hero-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-link {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #FF9D00;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  color: #555;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em; 
+  /* Adicionaremos a animação de "bounce" depois com mais CSS */
+}
+
+#Scroll{
+    color: #ff9d00a4;
+
+}

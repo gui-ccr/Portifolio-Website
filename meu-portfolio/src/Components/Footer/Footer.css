@@ -1,0 +1,30 @@
+.footer {
+  padding: 2rem;
+  background-color: #111111; /* Um preto um pouco mais escuro */
+  border-top: 1px solid #2c2c2c;
+  text-align: center;
+  color: #a0a0a0; /* Cinza claro */
+}
+
+.footer-text {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-link-footer {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.social-link-footer:hover {
+  color: #FF9D00; 
+}

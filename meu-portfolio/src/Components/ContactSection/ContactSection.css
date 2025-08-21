@@ -1,0 +1,75 @@
+.contact-section {
+  min-height: 90vh;
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--color-background-secondary); /* <-- Variável */
+}
+
+.contact-subtitle {
+  color: var(--color-text-secondary); /* <-- Variável */
+  margin-bottom: 3rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary); /* <-- Variável */
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-card); /* <-- Variável */
+  border: 1px solid var(--color-border); /* <-- Variável */
+  border-radius: 8px;
+  color: var(--color-text-primary); /* <-- Variável */
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-accent); /* <-- Variável */
+  box-shadow: 0 0 0 3px var(--color-focus-ring); /* <-- Variável */
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-accent); /* <-- Variável */
+  color: var(--color-accent-text); /* <-- Variável */
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.submit-button:hover {
+  opacity: 0.9;
+}
+
+.status-message {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+}

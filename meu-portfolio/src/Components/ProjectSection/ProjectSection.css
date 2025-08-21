@@ -1,0 +1,86 @@
+.projects-section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  text-align: center;
+  /* A cor de fundo já vem do body, então não precisamos definir aqui */
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  background-color: var(--color-card); /* <-- Variável */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-border); /* <-- Variável */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px var(--color-shadow); /* <-- Variável */
+}
+
+.project-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-category {
+  display: inline-block;
+  background-color: var(--color-accent); /* <-- Variável */
+  color: var(--color-accent-text); /* <-- Variável */
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary); /* <-- Variável */
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary); /* <-- Variável */
+  line-height: 1.6;
+}

@@ -1,0 +1,46 @@
+
+:root {
+  --color-background: #242424;
+  --color-background-secondary: #1a1a1a;
+  --color-card: #1e1e1ed8;
+  --color-border: #2c2c2c;
+  --color-text-primary: #E0E0E0;
+  --color-text-secondary: #a0a0a0;
+  --color-accent: #FF9D00;
+  --color-accent-text: #111111;
+  --color-header-bg: rgba(17, 17, 17, 0.5); /* Fundo do header escuro e semi-transparente */
+  --color-card-hover: #333333;
+  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-focus-ring: rgba(255, 157, 0, 0.2);
+
+}
+
+
+/* Quando o body tiver a classe .light-theme, estes valores serão usados */
+body.light-theme {
+  --color-background: #fdf6e3;           /* Um bege bem claro, tipo papel antigo */
+  --color-background-secondary: #f5efdc; /* Um tom um pouco mais escuro para as seções */
+  --color-card: #f5efdc;                 /* A mesma cor para os cards */
+  --color-border: #e0d8c4;               /* Uma borda suave */
+  --color-text-primary: #586e75;         /* Um cinza-azulado escuro para o texto principal */
+  --color-text-secondary: #839496;       /* Um cinza mais claro para o texto secundário */
+  --color-accent: #cb4b16;               /* Um laranja mais "queimado" que combina com o bege */
+  --color-accent-text: #ffffff;          /* Texto branco para o botão */
+  --color-header-bg: rgba(250, 183, 0, 0.8); /* Fundo do header bege e semi-transparente */
+  --color-card-hover: #e0d8c4;           /* Cor do card no hover */
+  --color-shadow: rgba(0, 0, 0, 0.08);   /* Sombra bem mais suave */
+  --color-focus-ring: rgba(203, 75, 22, 0.3); /* Brilho do foco com o novo laranja */
+}
+
+/* Aplicando as variáveis */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
