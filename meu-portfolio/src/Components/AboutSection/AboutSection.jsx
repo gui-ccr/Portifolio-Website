@@ -42,6 +42,7 @@ function AboutSection() {
                 <div className="skill-card" style={{'--hover-color': '#FFDA42'}}>JavaScript</div>
                 <div className="skill-card" style={{'--hover-color': '#2CDAFD'}}>React</div>
                 <div className="skill-card" style={{'--hover-color': '#9C74F7'}}>Vite</div>
+                <div className="skill-card" style={{'--hover-color': '#5906a7ff'}}>Boostrap</div>
             </div>
           </div>
 
@@ -53,6 +54,7 @@ function AboutSection() {
               <div className="skill-card" style={{'--hover-color': '#CB3738'}}>Java</div>
               <div className="skill-card" style={{'--hover-color': '#B02154'}}>Maven</div>
               <div className="skill-card" style={{'--hover-color': '#08415C'}}>SQLite</div>
+              <div className="skill-card" style={{'--hover-color': '#0d5f0dff'}}>PostGreeSQL</div>
             </div>
           </div>
 
