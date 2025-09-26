@@ -17,6 +17,7 @@
 .hero-greeting {
   font-size: 1.25rem;
   color: #FF9D00; /* Laranja de destaque */
+  position: relative;
 }
 
 .hero-title {
@@ -24,6 +25,7 @@
   font-weight: 700;
   margin: 1rem 0;
   line-height: 1.1;
+  position: relative;
 }
 
 .hero-name {
@@ -34,6 +36,24 @@
   font-size: 1.75rem;
   color: #a0a0a0; /* Cinza claro para o subtítulo */
   font-weight: 400;
+  position: relative;
+}
+
+/* Cursor piscando */
+.typing-cursor::after {
+  content: "|";
+  color: #FF9D00;
+  animation: blink 1s infinite;
+  font-weight: normal;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
 }
 
 .hero-socials {

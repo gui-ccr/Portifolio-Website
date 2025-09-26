@@ -14,6 +14,8 @@
   --color-text-secondary: #a0a0a0;
   --color-accent: #FF9D00;
   --color-accent-text: #111111;
+  --color-freelancer: #2ECC40; /* Verde para projetos freelancer */
+  --color-freelancer-text: #ffffff;
   --color-header-bg: rgba(17, 17, 17, 0.5); /* Fundo do header escuro e semi-transparente */
   --color-card-hover: #333333;
   --color-shadow: rgba(0, 0, 0, 0.4);
@@ -32,6 +34,8 @@ body.light-theme {
   --color-text-secondary: #839496;       /* Um cinza mais claro para o texto secundário */
   --color-accent: #cb4b16;               /* Um laranja mais "queimado" que combina com o bege */
   --color-accent-text: #ffffff;          /* Texto branco para o botão */
+  --color-freelancer: #268bd2;           /* Azul para projetos freelancer no tema claro */
+  --color-freelancer-text: #ffffff;
   --color-header-bg: rgba(250, 183, 0, 0.8); /* Fundo do header bege e semi-transparente */
   --color-card-hover: #e0d8c4;           /* Cor do card no hover */
   --color-shadow: rgba(0, 0, 0, 0.08);   /* Sombra bem mais suave */

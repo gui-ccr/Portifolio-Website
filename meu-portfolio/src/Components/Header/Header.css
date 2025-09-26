@@ -58,6 +58,9 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
+.nav-link:hover{
+  color: var(--color-accent);
+}
 
 .nav-link.active {
   color: var(--color-accent);

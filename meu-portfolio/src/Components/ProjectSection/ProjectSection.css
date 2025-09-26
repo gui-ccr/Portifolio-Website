@@ -72,6 +72,31 @@
   margin-bottom: 1rem;
 }
 
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.project-tag.category {
+  background-color: var(--color-accent);
+  color: var(--color-accent-text);
+}
+
+.project-tag.freelancer {
+  background-color: var(--color-freelancer);
+  color: var(--color-freelancer-text);
+}
+
 .project-title {
   font-size: 1.25rem;
   font-weight: 600;

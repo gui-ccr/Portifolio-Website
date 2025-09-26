@@ -43,6 +43,9 @@ function AboutSection() {
                 <div className="skill-card" style={{'--hover-color': '#2CDAFD'}}>React</div>
                 <div className="skill-card" style={{'--hover-color': '#9C74F7'}}>Vite</div>
                 <div className="skill-card" style={{'--hover-color': '#5906a7ff'}}>Boostrap</div>
+                <div className="skill-card" style={{'--hover-color': '#61DBFB'}}>Tailwind</div>
+                <div className="skill-card" style={{'--hover-color': '#29ffe3ff'}}>MUI</div>
+
             </div>
           </div>
 
@@ -55,6 +58,7 @@ function AboutSection() {
               <div className="skill-card" style={{'--hover-color': '#B02154'}}>Maven</div>
               <div className="skill-card" style={{'--hover-color': '#08415C'}}>SQLite</div>
               <div className="skill-card" style={{'--hover-color': '#0d5f0dff'}}>PostGreeSQL</div>
+              <div className="skill-card" style={{'--hover-color': '#4DB33D'}}>Supabase</div>
             </div>
           </div>
 
