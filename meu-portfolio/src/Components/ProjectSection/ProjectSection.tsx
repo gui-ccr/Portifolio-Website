@@ -36,7 +36,7 @@ const projectsData: Project[] = [
     description: 'Aplicação web moderna construída com React e Vite para simular a vitrine de uma concessionária. O projeto possui design totalmente responsivo com Bootstrap e integra a API do Google Maps para exibir a localização da empresa.', 
     imageUrl: AutoTop, 
     link: 'https://gui-ccr.github.io/concessionaria-site/',
-    isFreelancer: false
+    isFreelancer: true
   },
   { 
     category: 'Front-end', 
@@ -44,7 +44,7 @@ const projectsData: Project[] = [
     description: 'Aplicação web completa para um cinema local, focada em uma experiência de compra segura e moderna. Desenvolvida com React, Vite, MUI e com banco de dados no Supabase.', 
     imageUrl: Cineteca, 
     link: 'https://github.com/gui-ccr/Cineteca',
-    isFreelancer: false
+    isFreelancer: true
   },
   { 
     category: 'Front-end', 
