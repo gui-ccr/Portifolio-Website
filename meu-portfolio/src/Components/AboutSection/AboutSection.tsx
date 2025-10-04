@@ -43,13 +43,13 @@ const AboutSection: React.FC = () => {
                 </div>
                 <div className="skill-card" style={{'--hover-color': '#FFDA42'} as React.CSSProperties}>JavaScript
                 </div>
+                <div className="skill-card" style={{'--hover-color': '#61DBFB'} as React.CSSProperties}>Typescript
+                </div>
                 <div className="skill-card" style={{'--hover-color': '#2CDAFD'} as React.CSSProperties}>React
                 </div>
                 <div className="skill-card" style={{'--hover-color': '#9C74F7'} as React.CSSProperties}>Vite
                 </div>
                 <div className="skill-card" style={{'--hover-color': '#5906a7ff'} as React.CSSProperties}>Boostrap
-                </div>
-                <div className="skill-card" style={{'--hover-color': '#61DBFB'} as React.CSSProperties}>Tailwind
                 </div>
                 <div className="skill-card" style={{'--hover-color': '#29ffe3ff'} as React.CSSProperties}>MUI
                 </div>
