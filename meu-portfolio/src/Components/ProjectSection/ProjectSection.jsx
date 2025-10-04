@@ -3,6 +3,7 @@ import React from 'react';
 import AutoTop from '../../assets/demo-AutoTop.gif'
 import Condominio from '../../assets/demo-condominio.jpeg'
 import Profile_finder from '../../assets/demo-github-profile-finder.gif'
+import Cineteca from '../../assets/demo-cineteca.gif'
 import Gameplay from '../../assets/Gameplay.gif'
 import Sistema_Biblioteca from '../../assets/demo--Sistema-em-C++.gif'
 import grupo_cpp from '../../assets/demo-grupo-cpp.png'
@@ -24,6 +25,14 @@ const projectsData = [
     description: 'Aplicação web moderna construída com React e Vite para simular a vitrine de uma concessionária. O projeto possui design totalmente responsivo com Bootstrap e integra a API do Google Maps para exibir a localização da empresa.', 
     imageUrl: AutoTop, 
     link: 'https://gui-ccr.github.io/concessionaria-site/',
+    isFreelancer: false
+  },
+  { 
+    category: 'Front-end', 
+    title: 'Cineteca', 
+    description: 'Aplicação web completa para um cinema local, focada em uma experiência de compra segura e moderna. Desenvolvida com React, Vite, MUI e com banco de dados no Supabase.', 
+    imageUrl: Cineteca, 
+    link: 'https://github.com/gui-ccr/Cineteca',
     isFreelancer: false
   },
   { 
