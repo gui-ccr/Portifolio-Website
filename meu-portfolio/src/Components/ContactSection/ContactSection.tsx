@@ -2,22 +2,28 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './ContactSection.css';
 
-function ContactSection() {
+const ContactSection: React.FC = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [statusMessage, setStatusMessage] = useState('');
 
     // 1. Crie uma referência para o formulário
-    const form = useRef();
+    const form = useRef<HTMLFormElement>(null);
 
     // 2. A função que será chamada no envio
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     // Previne que a página recarregue, que é o comportamento padrão do formulário
     e.preventDefault();
 
     // Mostra uma mensagem de "Enviando..."
     setStatusMessage('Enviando...');
+
+    if (!form.current) {
+     
+      setStatusMessage('Ocorreu um erro ao enviar a mensagem. Tente novamente.');
+      return;
+    }
 
     // 3. EmailJS
     emailjs.sendForm(
@@ -64,7 +70,7 @@ function ContactSection() {
         
         <div className="form-group">
           <label htmlFor="message">Sua Mensagem</label>
-          <textarea id="message" name="message" rows="5" required value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
+          <textarea id="message" name="message" rows={5} required value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
         </div>
         
         <button type="submit" className="submit-button">Enviar Mensagem</button>

@@ -10,7 +10,19 @@ import grupo_cpp from '../../assets/demo-grupo-cpp.png'
 import MovieFlix from '../../assets/demo-movieflix.gif'
 import './ProjectSection.css';
 
-const projectsData = [
+interface Project {
+  category: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  link?: string; // o ? indica que é uma prop opcional
+  isFreelancer: boolean; 
+
+
+}
+
+// 1. A LISTA DE DADOS (você pode completar com seus projetos depois)
+const projectsData: Project[] = [
   { 
     category: 'Full-Stack', 
     title: 'Sistema de Gerenciamento de Condominios', 
@@ -19,19 +31,19 @@ const projectsData = [
     isFreelancer: true // Exemplo: este foi um projeto freelancer
   },
   { 
-    category: 'Full-Stack', 
-    title: 'Cineteca', 
-    description: 'Aplicação web completa para um cinema local, focada em uma experiência de compra segura e moderna. Desenvolvida com React, Vite, MUI e com banco de dados no Supabase.', 
-    imageUrl: Cineteca, 
-    link: 'https://github.com/gui-ccr/Cineteca',
-    isFreelancer: false
-  },
-  { 
     category: 'Front-end', 
     title: 'AutoTop', 
     description: 'Aplicação web moderna construída com React e Vite para simular a vitrine de uma concessionária. O projeto possui design totalmente responsivo com Bootstrap e integra a API do Google Maps para exibir a localização da empresa.', 
     imageUrl: AutoTop, 
     link: 'https://gui-ccr.github.io/concessionaria-site/',
+    isFreelancer: false
+  },
+  { 
+    category: 'Front-end', 
+    title: 'Cineteca', 
+    description: 'Aplicação web completa para um cinema local, focada em uma experiência de compra segura e moderna. Desenvolvida com React, Vite, MUI e com banco de dados no Supabase.', 
+    imageUrl: Cineteca, 
+    link: 'https://github.com/gui-ccr/Cineteca',
     isFreelancer: false
   },
   { 
@@ -76,7 +88,7 @@ const projectsData = [
   },
 ];
 
-function ProjectCard({ title, description, imageUrl, link, category, isFreelancer }) {
+const ProjectCard: React.FC<Project> = ({ title, description, imageUrl, link, category, isFreelancer }) =>{
   return (
     <div className="project-card">
       <a href={link} target="_blank" rel="noopener noreferrer">
@@ -96,8 +108,8 @@ function ProjectCard({ title, description, imageUrl, link, category, isFreelance
   );
 }
 
-// 3. A FUNÇÃO PRINCIPAL DO COMPONENTE 
-function ProjectSection() {
+// 3. A FUNÇÃO PRINCIPAL DO COMPONENTE
+const ProjectSection: React.FC = () => {
   return (
     <section id="projetos" className="projects-section">
       <h2 className="section-title">Meus <span className="highlight">Projetos</span></h2>
@@ -105,12 +117,7 @@ function ProjectSection() {
         {projectsData.map((project, index) => (
           <ProjectCard 
             key={index}
-            title={project.title}
-            description={project.description}
-            imageUrl={project.imageUrl}
-            link={project.link}
-            category={project.category}
-            isFreelancer={project.isFreelancer}
+            {...project}  // espalha todas as props do projeto
           />
         ))}
       </div>
@@ -118,5 +125,4 @@ function ProjectSection() {
   );
 }
 
-// 4. A EXPORTAÇÃO, QUE AGORA FUNCIONA
 export default ProjectSection;

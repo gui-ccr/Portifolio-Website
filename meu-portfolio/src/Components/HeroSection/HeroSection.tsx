@@ -2,17 +2,21 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import './HeroSection.css'; 
-function HeroSection() {
-  const greetingRef = useRef(null);
-  const titleRef = useRef(null);
-  const subtitleRef = useRef(null);
+
+const HeroSection: React.FC = () => {
+
+
+  const greetingRef = useRef<HTMLParagraphElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const subtitleRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
     const greeting = greetingRef.current;
     const title = titleRef.current;
     const subtitle = subtitleRef.current;
 
-    // Limpar conteúdo inicial
+    if (!greeting || !title || !subtitle) return;
+
     greeting.textContent = '';
     title.textContent = '';
     subtitle.textContent = '';
@@ -21,7 +25,7 @@ function HeroSection() {
     const tl = gsap.timeline();
 
     // Função para criar efeito de digitação com cursor
-    const typeText = (element, text, delay = 0) => {
+    const typeText = (element: HTMLElement, text: string, delay: number = 0) => {
       return gsap.to(element, {
         duration: text.length * 0.08, // Velocidade de digitação
         ease: "none",

@@ -2,7 +2,7 @@ import React, { useState } from "react"; // 1. Importe o useState
 import { Link } from "react-scroll";
 import "./Header.css";
 
-function Header() {
+const Header: React.FC = () =>  {
   // 2. Crie um estado para controlar se o menu mobile está aberto
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
