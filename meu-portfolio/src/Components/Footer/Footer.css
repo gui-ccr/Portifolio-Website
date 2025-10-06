@@ -1,9 +1,9 @@
 .footer {
   padding: 2rem;
-  background-color: #111111; /* Um preto um pouco mais escuro */
+  background-color: #111111; 
   border-top: 1px solid #2c2c2c;
   text-align: center;
-  color: #a0a0a0; /* Cinza claro */
+  color: #a0a0a0; 
 }
 
 .footer-text {
@@ -25,6 +25,14 @@
   transition: color 0.3s ease;
 }
 
-.social-link-footer:hover {
-  color: #FF9D00; 
+#linkedin:hover {
+  color: #0050b9;
+}
+
+#github:hover {
+  color: #696969;
+}
+
+#whatsapp:hover {
+  color: #25D366;
 }
