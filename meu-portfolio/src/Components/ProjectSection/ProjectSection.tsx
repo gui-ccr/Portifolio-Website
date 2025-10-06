@@ -21,29 +21,29 @@ interface Project {
 
 }
 
-// 1. A LISTA DE DADOS (você pode completar com seus projetos depois)
+// 1. A LISTA DE DADOS DOS PROJETOS
 const projectsData: Project[] = [
   { 
     category: 'Full-Stack', 
     title: 'Sistema de Gerenciamento de Condominios', 
     description: 'Aplicação web Full-Stack desenvolvida para a gestão completa de condomínios. A plataforma conta com um back-end robusto em PostgreSQL, gerenciado via Supabase, e um front-end dinâmico construído com React, Vite e CSS3 puro para uma interface administrativa limpa e de alta performanc', 
     imageUrl: Condominio,
-    isFreelancer: true // Exemplo: este foi um projeto freelancer
+    isFreelancer: true 
+  },
+  { 
+    category: 'Full-Stack', 
+    title: 'Cineteca', 
+    description: 'Aplicação web completa para um cinema local, focada em uma experiência de compra segura e moderna. Desenvolvida com React, Vite, MUI e com banco de dados no Supabase.', 
+    imageUrl: Cineteca, 
+    link: 'https://gui-ccr.github.io/Cineteca/',
+    isFreelancer: true
   },
   { 
     category: 'Front-end', 
     title: 'AutoTop', 
     description: 'Aplicação web moderna construída com React e Vite para simular a vitrine de uma concessionária. O projeto possui design totalmente responsivo com Bootstrap e integra a API do Google Maps para exibir a localização da empresa.', 
     imageUrl: AutoTop, 
-    link: 'https://gui-ccr.github.io/concessionaria-site/',
-    isFreelancer: true
-  },
-  { 
-    category: 'Front-end', 
-    title: 'Cineteca', 
-    description: 'Aplicação web completa para um cinema local, focada em uma experiência de compra segura e moderna. Desenvolvida com React, Vite, MUI e com banco de dados no Supabase.', 
-    imageUrl: Cineteca, 
-    link: 'https://github.com/gui-ccr/Cineteca',
+    link: 'https://gui-ccr.github.io/AutoTop/',
     isFreelancer: true
   },
   { 
