@@ -8,21 +8,20 @@ const AboutSection: React.FC = () => {
       <div className="about-content">
         <div className="about-text">
           <h2 className="about-title">
-            Mais sobre <span className="hightLight">mim</span>
+            Desenvolvedor Front-end com Visão <span className="hightLight">Full-Stack</span>
           </h2>
           <p className="about-description">
-            Sou um profissional autodidata e apaixonado por criar experiências
-            incríveis e envolventes para os usuários. Com experiências em
-            projetos com uso de
+            Sou um desenvolvedor apaixonado por criar interfaces web e mobile que sejam não apenas bonitas, 
+            mas também inteligentes e performáticas. <br></br>
+            Com foco principal em 
             <span className="hightLight">
               {" "}
-              HTML, CSS, JavaScript, React, Vite
+              React, JavaScript, TypeScript e Flutter
             </span>{" "}
-            e possuo conhecimentos no back-end com,
-            <span className="hightLight"> C++, Java, Maven, SQLite</span> tambem
-            sou um entusiasta da area mobile com
-            <span className="hightLight"> Dart & Flutter</span> busco sempre a
-            melhor experiência do usuário nos mais diversos dispositivos.
+            Minha experiência com tecnologias de back-end com
+            <span className="hightLight"> Java, C++ e bancos de dados SQL </span> não me divide;
+            ela me torna um desenvolvedor front-end mais completo, 
+            permitindo-me construir soluções mais coesas e colaborar de forma eficaz em todo o ciclo de vida do projeto.
           </p>
         </div>
         <div className="about-image-container">
@@ -33,27 +32,34 @@ const AboutSection: React.FC = () => {
         <h3 className="skills-title">Minhas Tecnologias</h3>
         <div className="skills-categories">
 
-            {/* Categoria Front-end */}
+          {/* Categoria Front-end */}
           <div className="skill-category">
             <h4 className="category-title">Front-end</h4>
             <div className="skills-grid">
-                <div className="skill-card" style={{'--hover-color': '#F26A2E'} as React.CSSProperties}>HTML
-                </div>
-                <div className="skill-card" style={{'--hover-color': '#2EACDE'} as React.CSSProperties}>CSS
-                </div>
-                <div className="skill-card" style={{'--hover-color': '#FFDA42'} as React.CSSProperties}>JavaScript
-                </div>
-                <div className="skill-card" style={{'--hover-color': '#61DBFB'} as React.CSSProperties}>Typescript
-                </div>
-                <div className="skill-card" style={{'--hover-color': '#2CDAFD'} as React.CSSProperties}>React
-                </div>
-                <div className="skill-card" style={{'--hover-color': '#9C74F7'} as React.CSSProperties}>Vite
-                </div>
-                <div className="skill-card" style={{'--hover-color': '#5906a7ff'} as React.CSSProperties}>Boostrap
-                </div>
-                <div className="skill-card" style={{'--hover-color': '#29ffe3ff'} as React.CSSProperties}>MUI
-                </div>
-
+              <div className="skill-card" style={{'--hover-color': '#F26A2E'} as React.CSSProperties}>
+                HTML
+              </div>
+              <div className="skill-card" style={{'--hover-color': '#2EACDE'} as React.CSSProperties}>
+                CSS
+              </div>
+              <div className="skill-card" style={{'--hover-color': '#FFDA42'} as React.CSSProperties}>
+                JavaScript
+              </div>
+              <div className="skill-card" style={{'--hover-color': '#3178C6'} as React.CSSProperties}>
+                TypeScript
+              </div>
+              <div className="skill-card" style={{'--hover-color': '#61DBFB'} as React.CSSProperties}>
+                React
+              </div>
+              <div className="skill-card" style={{'--hover-color': '#9C74F7'} as React.CSSProperties}>
+                Vite
+              </div>
+              <div className="skill-card" style={{'--hover-color': '#7952B3'} as React.CSSProperties}>
+                Bootstrap
+              </div>
+              <div className="skill-card" style={{'--hover-color': '#007FFF'} as React.CSSProperties}>
+                MUI
+              </div>
             </div>
           </div>
 
@@ -61,22 +67,22 @@ const AboutSection: React.FC = () => {
           <div className="skill-category">
             <h4 className="category-title">Back-end</h4>
             <div className="skills-grid">
-              <div className="skill-card" style={{'--hover-color': '#084985'} as React.CSSProperties}>
+              <div className="skill-card" style={{'--hover-color': '#00599C'} as React.CSSProperties}>
                 C++
               </div>
-              <div className="skill-card" style={{'--hover-color': '#CB3738'} as React.CSSProperties}>
+              <div className="skill-card" style={{'--hover-color': '#ED8B00'} as React.CSSProperties}>
                 Java
               </div>
-              <div className="skill-card" style={{'--hover-color': '#B02154'} as React.CSSProperties}>
+              <div className="skill-card" style={{'--hover-color': '#C71A36'} as React.CSSProperties}>
                 Maven
               </div>
-              <div className="skill-card" style={{'--hover-color': '#08415C'} as React.CSSProperties}>
+              <div className="skill-card" style={{'--hover-color': '#003B57'} as React.CSSProperties}>
                 SQLite
               </div>
-              <div className="skill-card" style={{'--hover-color': '#0d5f0dff'} as React.CSSProperties}>
-                PostGreeSQL
+              <div className="skill-card" style={{'--hover-color': '#336791'} as React.CSSProperties}>
+                PostgreSQL
               </div>
-              <div className="skill-card" style={{'--hover-color': '#4DB33D'} as React.CSSProperties}>
+              <div className="skill-card" style={{'--hover-color': '#3ECF8E'} as React.CSSProperties}>
                 Supabase
               </div>
             </div>
@@ -86,9 +92,11 @@ const AboutSection: React.FC = () => {
           <div className="skill-category">
             <h4 className="category-title">Mobile</h4>
             <div className="skills-grid">
-              <div className="skill-card" style={{'--hover-color': '#31B9F5'} as React.CSSProperties}>Dart
+              <div className="skill-card" style={{'--hover-color': '#0175C2'} as React.CSSProperties}>
+                Dart
               </div>
-              <div className="skill-card" style={{'--hover-color': '#0A5D9E'} as React.CSSProperties}>Flutter
+              <div className="skill-card" style={{'--hover-color': '#02569B'} as React.CSSProperties}>
+                Flutter
               </div>
             </div>
           </div>
