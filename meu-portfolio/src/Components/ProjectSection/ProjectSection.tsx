@@ -71,14 +71,6 @@ const projectsData: Project[] = [
     isFreelancer: false
   },
   { 
-    category: 'Back-end', 
-    title: ' 🚀 Grupo de Estudo C++: Do Básico ao Avançado 🚀 ', 
-    description: 'Um repositório colaborativo com dezenas de exercícios resolvidos e comentados, projetado para ser o ponto de partida perfeito para quem quer dominar o C++. Aqui, aprendemos juntos, revisamos o código uns dos outros e construímos conhecimento de forma aberta.', 
-    imageUrl: grupo_cpp, 
-    link: 'https://github.com/gui-ccr/Algoritmo-Exercicios-CPP-Para-Iniciantes',
-    isFreelancer: false
-  },
-  { 
     category: 'Mobile', 
     title: '🎬 MovieFlix 🎬', 
     description: 'Aplicativo mobile que consome a API do TMDb, demonstrando habilidades em consumo de APIs REST, gerenciamento de estado e UIs declarativas.', 
