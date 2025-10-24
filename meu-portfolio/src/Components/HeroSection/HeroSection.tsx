@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
 
     const greetingText = "Olá, visitante! 👋";
     const titleText = "Meu nome é Guilherme";
-    const subtitleText = "Desenvolvedor Full-Stack";
+    const subtitleText = "Desenvolvedor Front-end";
 
     tl.add(typeText(greeting, greetingText, 'greeting'), 0.5)
       .add(typeText(title, titleText, 'title'), '+=0.3')
