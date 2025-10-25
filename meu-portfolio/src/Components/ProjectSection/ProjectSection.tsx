@@ -43,7 +43,7 @@ const projectsData: Project[] = [
     title: 'AutoTop', 
     description: 'Aplicação web moderna construída com React e Vite para simular a vitrine de uma concessionária. O projeto possui design totalmente responsivo com Bootstrap e integra a API do Google Maps para exibir a localização da empresa.', 
     imageUrl: AutoTop, 
-    link: 'https://gui-ccr.github.io/AutoTop/',
+    link: 'https://autotopveiculos.netlify.app/',
     isFreelancer: true
   },
   { 
