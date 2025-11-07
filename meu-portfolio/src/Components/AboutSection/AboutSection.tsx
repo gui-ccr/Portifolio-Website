@@ -8,7 +8,7 @@ const AboutSection: React.FC = () => {
       <div className="about-content">
         <div className="about-text">
           <h2 className="about-title">
-            Desenvolvedor Front-end com Visão <span className="hightLight">Full-Stack</span>
+            Desenvolvedor <span className="hightLight">Front-end</span>
           </h2>
           <p className="about-description">
             Sou um desenvolvedor apaixonado por criar interfaces web e mobile que sejam não apenas bonitas, 

@@ -2,12 +2,8 @@
 import React from 'react';
 import AutoTop from '../../assets/demo-AutoTop.gif'
 import Condominio from '../../assets/demo-condominio.jpeg'
-import Profile_finder from '../../assets/demo-github-profile-finder.gif'
 import Cineteca from '../../assets/demo-cineteca.gif'
-import Gameplay from '../../assets/Gameplay.gif'
-import Sistema_Biblioteca from '../../assets/demo--Sistema-em-C++.gif'
-import grupo_cpp from '../../assets/demo-grupo-cpp.png'
-import MovieFlix from '../../assets/demo-movieflix.gif'
+import ClinicaFLow from '../../assets/Demo-ClinicaFlow.gif'
 import './ProjectSection.css';
 
 interface Project {
@@ -31,6 +27,14 @@ const projectsData: Project[] = [
     isFreelancer: true 
   },
   { 
+    category: 'Front-end', 
+    title: 'ClincaFlow', 
+    description: 'Desenvolvi uma landing page moderna e de alta conversão para um produto de IA(ClinicaFlow), utilizando React, TypeScript e Tailwind CSS. Implementei animações complexas e responsivas com a biblioteca GSAP para criar uma experiência de usuário premium e interativa. Integrei o gateway de pagamento Stripe para processamento de assinaturas evendas diretas na plataforma',
+    imageUrl: ClinicaFLow, 
+    link: 'https://ClinicaFlow.ia.br',
+    isFreelancer: true
+  },
+  { 
     category: 'Full-Stack', 
     title: 'Cineteca', 
     description: 'Aplicação web completa para um cinema local, focada em uma experiência de compra segura e moderna. Desenvolvida com React, Vite, MUI e com banco de dados no Supabase.', 
@@ -45,38 +49,6 @@ const projectsData: Project[] = [
     imageUrl: AutoTop, 
     link: 'https://autotopveiculos.netlify.app/',
     isFreelancer: true
-  },
-  { 
-    category: 'Front-end', 
-    title: 'Github Profile Finder', 
-    description: 'Uma aplicação web construída com HTML, CSS e JavaScript puro para demonstrar o domínio de conceitos fundamentais do front-end, como manipulação do DOM, programação assíncrona (async/await) e consumo de APIs externas.', 
-    imageUrl: Profile_finder, 
-    link: 'https://gui-ccr.github.io/Github-Profile-Finder/',
-    isFreelancer: false
-  },
-  { 
-    category: 'Back-end', 
-    title: '⚔️ RPG Batalha por Turnos ⚔️', 
-    description: 'Sistema de RPG via terminal focado em demonstrar lógica de POO, arquitetura de software (CRUD) e interação com banco de dados. Uma base sólida para a construção de qualquer tipo de aplicação.', 
-    imageUrl: Gameplay, 
-    link: 'https://github.com/gui-ccr/rpg-batalha-console-java/releases/tag/v1.0.0',
-    isFreelancer: false
-  },
-  { 
-    category: 'Back-end', 
-    title: '💿 Sistema de Gerenciamento de Biblioteca de Mídia 💿', 
-    description: 'Mergulho técnico em C++ para demonstrar domínio de Polimorfismo e gerenciamento de memória moderno com ponteiros inteligentes (std::unique_ptr).', 
-    imageUrl: Sistema_Biblioteca, 
-    link: 'https://github.com/gui-ccr/LibMan-Cpp/releases/tag/v1.0.1',
-    isFreelancer: false
-  },
-  { 
-    category: 'Mobile', 
-    title: '🎬 MovieFlix 🎬', 
-    description: 'Aplicativo mobile que consome a API do TMDb, demonstrando habilidades em consumo de APIs REST, gerenciamento de estado e UIs declarativas.', 
-    imageUrl: MovieFlix, 
-    link: 'https://github.com/gui-ccr/MovieFlix_App',
-    isFreelancer: false
   },
 ];
 
